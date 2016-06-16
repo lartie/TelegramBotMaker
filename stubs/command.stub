@@ -1,0 +1,24 @@
+<?php
+
+namespace DummyNamespace;
+
+class DummyClass
+{
+    /**
+     * @var string Command Name
+     */
+    protected $name = "start";
+
+    /**
+     * @var string Command Description
+     */
+    protected $description = "Start Command to get you started";
+
+    /**
+     * @inheritdoc
+     */
+    public function handle($arguments)
+    {
+        // config('DummyConfig.token');
+    }
+}

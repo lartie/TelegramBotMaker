@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Telegram API Bot routes
+ */
+Route::group(['prefix' => 'telegram', 'middleware' => 'web', 'as' => 'telegram'], function() {
+
+    Route::group(['prefix' => 'DummyNameTelegramBot', 'as' => '.DummyNameTelegramBot'], function () {
+
+        /**
+         * Telegram webhook
+         */
+        Route::post('webhook/' . config('DummyConfig.token'), ['as' => '.telegram.webhook', 'uses' => 'DummyTelegramController@webhook']);
+    });
+});

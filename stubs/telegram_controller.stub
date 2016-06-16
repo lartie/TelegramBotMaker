@@ -1,0 +1,24 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+
+class TelegramController extends Controller
+{
+    /**
+     * Telegram webhook
+     * @param Request $request
+     */
+    public function webhook(Request $request)
+    {
+        $content = json_decode($request->getContent());
+
+        /**
+         * Command processing.
+         *
+         * $content;
+         */
+    }
+}
