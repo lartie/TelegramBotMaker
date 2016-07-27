@@ -13,7 +13,7 @@ use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use LArtie\TelegramBotMaker\Core\Maker;
 
-class Make extends Command
+class MakeBot extends Command
 {
     /**
      * The name and signature of the console command.
