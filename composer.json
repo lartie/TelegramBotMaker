@@ -1,0 +1,24 @@
+{
+    "name": "lartie/telegram-bot-maker",
+    "description": "Telegram Bot Maker for Laravel",
+    "keywords": [
+        "telegram"
+    ],
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artie",
+            "email": "log.wil.log@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LArtie\\TelegramBotMaker\\": "src/"
+        }
+    }
+}
