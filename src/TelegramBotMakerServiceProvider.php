@@ -4,7 +4,7 @@ namespace LArtie\TelegramBotMaker;
 
 use Illuminate\Support\ServiceProvider;
 
-use LArtie\TelegramBotMaker\Console\Commands\Make;
+use LArtie\TelegramBotMaker\Console\Commands\MakeBot;
 
 class TelegramBotMakerServiceProvider extends ServiceProvider
 {
@@ -13,7 +13,7 @@ class TelegramBotMakerServiceProvider extends ServiceProvider
      * @var array
      */
     protected $commands = [
-        Make::class,
+        MakeBot::class,
     ];
 
     /**
